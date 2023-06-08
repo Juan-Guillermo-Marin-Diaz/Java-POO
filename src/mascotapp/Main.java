@@ -1,10 +1,11 @@
 package mascotapp;
 
-import mascotapp.entidades.Perro;
+import mascotapp.entidades.Mascota;
 
 public class Main {
     public static void main(String[] args) {
 
-        Perro p1 = new Perro();
+        Mascota m1 = new Mascota();
+
     }
 }

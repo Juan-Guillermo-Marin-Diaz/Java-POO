@@ -1,17 +1,15 @@
 package mascotapp;
 import java.util.Scanner;
 import mascotapp.entidades.Mascota;
+import mascotapp.servicios.ServicioMascota;
 
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+        ServicioMascota sm = new ServicioMascota();
 
-        Mascota m1 = new Mascota("Fernando Grandote", scan.next(), "Perro");
+        Mascota m1 = sm.crearMascota();
 
-        m1.setNombre("Pepe Grandote");
-
-        m1.pasear(100);
         System.out.println(m1.toString());
 
     }

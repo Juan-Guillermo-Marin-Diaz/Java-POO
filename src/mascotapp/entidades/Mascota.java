@@ -120,6 +120,7 @@ this.energia = 1000;
             energia -= energiaRestar;
 
         }
+        return energia;
     }
 
     @Override

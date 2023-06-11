@@ -27,7 +27,7 @@ public class VendedorServicio {
         System.out.println("Por favor ingrese el año en el que el vendedor inició labores");
         int anio = scan.nextInt();
         Date fecha = new Date(anio - 1900, mes - 1, dia);
-        v1.getFechainicio();
+        v1.setFechainicio(fecha);
         return v1;
 
     }

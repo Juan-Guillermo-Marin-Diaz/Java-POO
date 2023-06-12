@@ -34,8 +34,9 @@ public class Operacion {
 
     public void crearOperacion(){
 
-        System.out.println("Por favor ingrese 2 numeros");
+        System.out.println("Por favor ingrese el primer número");
         setNumero1(scan.nextDouble());
+        System.out.println("Por favor ingrese el segundo número");
         setNumero2(scan.nextDouble());
     }
 

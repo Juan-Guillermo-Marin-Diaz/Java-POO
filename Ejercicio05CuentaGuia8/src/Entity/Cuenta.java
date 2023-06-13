@@ -6,7 +6,7 @@ public class Cuenta {
     Scanner scan = new Scanner(System.in);
 
     private int numeroCuenta;
-    private Integer DNI;
+    private long DNI;
     private double saldoActual;
 
     public Cuenta() {
@@ -26,11 +26,11 @@ public class Cuenta {
         this.numeroCuenta = numeroCuenta;
     }
 
-    public Integer getDNI() {
+    public long getDNI() {
         return DNI;
     }
 
-    public void setDNI(Integer DNI) {
+    public void setDNI(long DNI) {
         this.DNI = DNI;
     }
 

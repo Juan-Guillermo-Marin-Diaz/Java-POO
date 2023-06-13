@@ -40,23 +40,35 @@ public class Cafetera {
         cantidadActual = capacidadMaxima;
     }
 
+    /**Método servirTaza(int): se pide el tamaño de una taza vacía, el método recibe el
+     tamaño de la taza y simula la acción de servir la taza con la capacidad indicada. Si la
+     cantidad actual de café “no alcanza” para llenar la taza, se sirve lo que quede. El
+     método le informará al usuario si se llenó o no la taza, y de no haberse llenado en
+     cuanto quedó la taza.*/
+
     public void servirTaza(int tamañoTaza) {
 
         if (cantidadActual >= tamañoTaza) {
             cantidadActual -= tamañoTaza;
-            System.out.println("La taza se ha llenado");
+            System.out.println("Sirviendo taza...");
+            System.out.println("La taza se ha llenado con " + tamañoTaza);
+            System.out.println("La cafetera ha quedado con " + cantidadActual + " unidades de cafe");
         } else {
             int cantidadServida = cantidadActual;
             cantidadActual = 0;
-            System.out.println("La taza no se pudo llenar. La cantidad en la taza es " + cantidadServida + "unidades " +
+            System.out.println("La taza no se pudo llenar. La cantidad en la cafetera es " + cantidadServida +
+                    "unidades " +
                     "de café");
+            System.out.println("La taza se sirvió con " + cantidadActual + " unidades de cafe");
+
         }
 
     }
 
-    public void vaciarCafetera() {
+    public int vaciarCafetera() {
 
         cantidadActual = 0;
+        return cantidadActual;
     }
 
     public void agregarCafe(int cantidad) {

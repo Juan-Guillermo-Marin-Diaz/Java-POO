@@ -68,16 +68,16 @@ public class Persona {
 
     public void crearPersona() {
 
-        System.out.println("Por favor ingrese su nombre");
-        setNombre(scan.next());
-        System.out.println("Por favor ingrese su edad");
-        setEdad(scan.nextInt());
-        System.out.println("Por favor ingrese su sexo");
-        setSexo(scan.next().charAt(0));
-        System.out.println("Por favor ingrese su masa corporal en kg");
-        setPeso(scan.nextDouble());
-        System.out.println("Por favor ingrese su altura en metros");
-        setAltura(scan.nextDouble());
+        //System.out.println("Por favor ingrese su nombre");
+        //setNombre(scan.next());
+        //System.out.println("Por favor ingrese su edad");
+        //setEdad(scan.nextInt());
+        //System.out.println("Por favor ingrese su sexo");
+        //setSexo(scan.next().charAt(0));
+        //System.out.println("Por favor ingrese su masa corporal en kg");
+        //setPeso(scan.nextDouble());
+        //System.out.println("Por favor ingrese su altura en metros");
+        //setAltura(scan.nextDouble());
 
         //Hacemos uso del ciclo while para validar el sexo
         while (sexo != 'H' && sexo != 'M' && sexo != 'O') {
@@ -88,29 +88,19 @@ public class Persona {
 
     public int calcularIMC() {
 
-        double pesoIdeal = this.peso / this.altura * this.altura;
+        double pesoIdeal = this.peso / (this.altura * this.altura);
 
         if (pesoIdeal < 20) {
-            System.out.println("Usted se encuentra por debajo de su peso ideal");
             return -1;
         } else if (pesoIdeal >= 20 && pesoIdeal <= 25) {
-            System.out.println("Usted se encuentra en su peso ideal");
             return 0;
         } else {
-            System.out.println("Usted está por encima de su peso ideal");
             return 1;
         }
     }
 
-    public boolean esMayorDeEdad(int age) {
-
-        if (this.edad < 18) {
-            System.out.println("Menor de edad");
-
-        } else {
-            System.out.println("Mayor de edad");
-        }
-            return false;
+    public boolean esMayorDeEdad() {
+        return edad >= 18;
     }
 
 }

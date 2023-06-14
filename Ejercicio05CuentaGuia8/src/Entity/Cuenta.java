@@ -94,4 +94,5 @@ public class Cuenta {
         System.out.println("Confirmar datos de la cuenta\n" + "\nDNI\n" + getDNI() + "\nNúmero de cuenta\n"+  +
                 getNumeroCuenta() + "\nSaldo actual\n" + getSaldoActual());
     }
+
 }

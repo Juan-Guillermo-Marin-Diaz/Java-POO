@@ -12,7 +12,7 @@ public class Ejercicio10ArreglosGuia8 {
         double arregloB[] = new double[20];
 
         /** Podemos contruir el objeto random de la clase Random o usar el metodo Math.random (investigar diferencia
-        entre ambos ya que el método Math.random es un pseudo generardor de números aleatorios) para generar para
+        entre ambos ya que el método Math.random es un pseudo generador de números aleatorios) para generar para
          generar los números aleatorios*/
 
         Random random = new Random();

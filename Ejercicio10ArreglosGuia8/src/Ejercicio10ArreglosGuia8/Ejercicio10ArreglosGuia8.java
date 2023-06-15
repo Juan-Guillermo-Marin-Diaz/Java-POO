@@ -17,22 +17,30 @@ public class Ejercicio10ArreglosGuia8 {
 
         Random random = new Random();
 
+        //Inicializamos el arregloA con los números aleatorios
         for (int i = 0; i < arregloA.length; i++) {
-            arregloA[i] = Math.random();
+            arregloA[i] = random.nextDouble();
 
         }
 
-        System.out.println("El arreglo original: " + Arrays.toString(arregloA));
+        System.out.println("El arreglo original: \n" + Arrays.toString(arregloA));
 
+        System.out.println("-------------------------------- ");
+
+        //Ordenamos el arregloA de menor a mayor
         Arrays.sort(arregloA);
 
+        //Copiamos los primeros 10 números ordenados del arregloA al ArregloB
         System.arraycopy(arregloA, 0, arregloB, 0, 10);
 
+        //Rellenamos los últimos 10 elementos del arregloB con el valor 0.5
         Arrays.fill(arregloB, 10, arregloB.length, 0.5);
 
-        System.out.println("Arreglo A ordenado: " + Arrays.toString(arregloA));
+        System.out.println("Arreglo A ordenado:\n " + Arrays.toString(arregloA));
 
-        System.out.println("Arreglo B combinado: " + Arrays.toString(arregloB));
+        System.out.println("------------------------------ ");
+
+        System.out.println("Arreglo B combinado:\n " + Arrays.toString(arregloB));
 
     }
 }

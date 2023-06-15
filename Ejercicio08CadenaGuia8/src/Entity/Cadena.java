@@ -72,7 +72,7 @@ public class Cadena {
 
     public void compararLogintud(String frase, String nuevaFrase) {
 
-        int longitudFrase1 = frase.length();
+        int longitudFrase1 = this.frase.length();
         int longitudNuevaFrase = nuevaFrase.length();
 
         if (longitudFrase1 == longitudNuevaFrase) {
@@ -100,10 +100,6 @@ public class Cadena {
 
     public boolean contiene(String letraABuscar) {
 
-        if (this.frase.equals(letraABuscar)) {
-            return true;
-        } else {
-            return false;
-        }
+        return frase.contains(letraABuscar);
     }
 }

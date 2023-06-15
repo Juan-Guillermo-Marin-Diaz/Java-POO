@@ -98,7 +98,7 @@ public class Cadena {
         return fraseReemplazada;
     }
 
-    public boolean contiene(String letra, char letraABuscar) {
+    public boolean contiene(String letraABuscar) {
 
         if (this.frase.equals(letraABuscar)) {
             return true;

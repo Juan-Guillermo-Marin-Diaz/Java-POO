@@ -16,8 +16,11 @@ public class Ejercicio12ClasePersonaGuia8 {
 
         persona.calcularEdad();
 
-        System.out.println("Por favor otra edad ");
+        System.out.println("Por favor ingrese otra edad en años ");
         int otraEdad = scan.nextInt();
-        persona.menorQue(otraEdad);
+        System.out.println("¿Es la edad de " + persona.getNombre() + " menor que la otra edad ingresada? " + persona.menorQue(otraEdad));
+
+        persona.mostrarPersona();
+
     }
 }

@@ -50,7 +50,7 @@ public class Persona {
         this.fechaDeNacimiento = new Date(year - 1900, month - 1, day);
 
         //El método scan.close() se utiliza para liberar recursos de memoria
-        scan.close();
+        //scan.close();
 
     }
 
@@ -73,9 +73,15 @@ public class Persona {
     public boolean menorQue(int edad) {
 
         if (edad > fechaDeNacimiento.getYear()) {
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
+    }
+
+    public void mostrarPersona() {
+
+        System.out.println("Nombre: " + getNombre() + " \nFecha de nacimiento: " + getFechaDeNacimiento());
+
     }
 }

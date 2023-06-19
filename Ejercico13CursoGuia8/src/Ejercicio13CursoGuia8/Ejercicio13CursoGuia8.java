@@ -8,7 +8,8 @@ public class Ejercicio13CursoGuia8 {
 
         Curso curso = new Curso();
 
-        curso.cargarAlumnos();
+        //curso.cargarAlumnos();
         curso.crearCurso();
+        System.out.println("Las ganancias semanales son de: $" + curso.calcularGananciaSemanal());
     }
 }

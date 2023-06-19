@@ -94,15 +94,27 @@ public class Curso {
         System.out.println("Por favor ingrese el nombre del curso: ");
         setNombreCurso(scan.nextLine());
 
-        System.out.println("Por favor el turno (mañana o tarde: ");
+        System.out.println("Por favor ingrese el turno (mañana o tarde): ");
         setTurno(scan.nextLine());
 
         System.out.println("Por favor ingrese la cantidad de días por semana: ");
-
-
         setCantidadDiasPorSemana(scan.nextDouble());
+
+        System.out.println("Por favor ingrese el precio por hora: ");
         setPrecioPorHora(scan.nextDouble());
+
+        System.out.println("Por favor ingrese la cantidad de horas por día: ");
         setCantidadHorasPorDia(scan.nextDouble());
 
+        cargarAlumnos();
+
+    }
+
+    public double calcularGananciaSemanal() {
+
+        int cantidadAlumnos = 5;
+        double gananciaSemanal = cantidadHorasPorDia * precioPorHora * cantidadAlumnos * cantidadDiasPorSemana;
+
+        return gananciaSemanal;
     }
 }

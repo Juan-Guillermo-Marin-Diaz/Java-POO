@@ -32,6 +32,7 @@ public class Cadena {
         return longitud;
     }
 
+
     public int mostrarVocales(String frase){
 
         int contadorVocales = 0;

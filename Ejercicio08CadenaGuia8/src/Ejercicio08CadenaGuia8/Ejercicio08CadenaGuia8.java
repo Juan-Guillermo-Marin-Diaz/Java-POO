@@ -39,5 +39,7 @@ public class Ejercicio08CadenaGuia8 {
         String letraBuscar = scan.next();
         System.out.println("¿La frase contiene la letra buscada? " +  cadena.contiene(letraBuscar));
 
+        scan.close();
+
     }
 }

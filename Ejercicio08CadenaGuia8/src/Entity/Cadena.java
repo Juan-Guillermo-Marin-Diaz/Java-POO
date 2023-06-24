@@ -101,6 +101,6 @@ public class Cadena {
 
     public boolean contiene(String letraABuscar) {
 
-        return frase.contains(letraABuscar);
+        return frase.contains(letraABus);
     }
 }

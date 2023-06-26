@@ -1,17 +1,31 @@
 package EjercicioExtra05MesesGuia8;
 
+import java.util.Scanner;
+
 public class EjercicioExtra05MesesGuia8 {
 
-    public static void main(String[] args) {
+    public static void main(String[] arg) {
 
-        StringBuilder stringb = new StringBuilder();
+        //Declaramos el arreglo meses con los meses del año
+        String[] meses = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
+        String mesSecreto = meses[9]; // Mes secreto es octubre en este ejemplo
+        boolean adivinado = false;
 
-         for (char letra = 'A'; letra <= 'Z' ; letra++) {
+        Scanner scanner = new Scanner(System.in);
 
-         stringb.append(letra);
-         }
-         String abecedario = stringb.toString();
+        while (!adivinado) {
+            System.out.print("Adivina el mes secreto. Introduce el nombre del mes en minúsculas: ");
+            String respuesta = scanner.nextLine();
 
-        System.out.println(abecedario);
+            if (respuesta.equals(mesSecreto)) {
+                System.out.println("¡Has acertado!");
+                adivinado = true;
+            } else {
+                System.out.println("No has acertado. Inténtalo de nuevo.");
+            }
+        }
+
+        scanner.close();
+
     }
 }

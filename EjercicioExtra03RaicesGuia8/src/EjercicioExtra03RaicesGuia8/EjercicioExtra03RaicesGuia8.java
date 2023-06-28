@@ -6,7 +6,7 @@ public class EjercicioExtra03RaicesGuia8 {
 
     public static void main(String[] args) {
 
-        Raices raiz = new Raices(1,-3,2);
+        Raices raiz = new Raices(2,5,1);
 
         raiz.calcular();
 
